@@ -1,0 +1,8 @@
+export { Header } from './Header'
+export { Avatar } from './Avatar'
+export { Cover } from './Cover'
+export { Info } from './Info'
+export { PersonalInfo } from './PersonalInfo'
+export { ContactInfo } from './ContactInfo'
+export { Socials } from './Socials'
+export { Card } from './Card'
