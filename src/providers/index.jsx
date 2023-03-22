@@ -1,12 +1,14 @@
 import { ThemeProvider } from 'styled-components'
-import { defaultTheme } from '../styles/defaultTheme'
-import { GlobalStyle } from '../styles/globalStyle'
+import { defaultTheme, GlobalStyle } from '../styles'
+import { ContextProvider } from './context'
 
 export default function Providers({ children }) {
 	return (
-		<ThemeProvider theme={defaultTheme}>
-			{children}
-			<GlobalStyle />
-		</ThemeProvider>
+		<ContextProvider>
+			<ThemeProvider theme={defaultTheme}>
+				{children}
+				<GlobalStyle />
+			</ThemeProvider>
+		</ContextProvider>
 	)
 }
