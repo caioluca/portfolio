@@ -23,7 +23,7 @@ const Container = styled.div`
 		font-weight: 500;
 		font-size: 22px;
 		line-height: 33px;
-		color: ${({ theme }) => theme.dark.secondary};
+		color: ${({ theme }) => theme.polarNight.nord3};
 	}
 `
 
@@ -31,5 +31,5 @@ const InfoLabel = styled.span`
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
-	color: ${({ theme }) => theme.dark.quartiary};
+	color: ${({ theme }) => theme.frost.nord7};
 `

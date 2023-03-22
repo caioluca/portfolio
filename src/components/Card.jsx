@@ -17,14 +17,14 @@ const Container = styled.div`
 	align-items: center;
 	gap: 14px;
 	border-radius: 24px;
-	box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.5), 10px 10px 20px #E5E5E5;
-	background-color: ${({ theme }) => theme.light.quartiary};
+	box-shadow: -10px -10px 20px ${({ theme }) => `${theme.polarNight.nord3}05`}, 10px 10px 20px ${({ theme }) => `${theme.polarNight.nord3}05`};
+	background-color: ${({ theme }) => theme.snowStorm.nord5};
 	padding: 12px 19px;
 	cursor: pointer;
 	user-select: none;
 
 	&:hover {
-		background-color: ${({ theme }) => theme.light.primary};
+		background-color: ${({ theme }) => theme.snowStorm.nord6};
 		transition: 0.3s;
 	}
 `
@@ -36,5 +36,5 @@ const Label = styled.span`
 
 	text-transform: uppercase;
 
-	color: ${({ theme }) => theme.dark.primary};
+	color: ${({ theme }) => theme.polarNight.nord1};
 `

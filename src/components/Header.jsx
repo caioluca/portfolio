@@ -20,6 +20,6 @@ const Container = styled.div`
 	justify-content: space-between;
 	gap: 21px;
 	border-radius: 24px;
-	background-color: ${({ theme }) => theme.light.primary};
-	box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.5), 10px 10px 20px #E5E5E5;
+	background-color: ${({ theme }) => theme.snowStorm.nord6};
+	box-shadow: -10px -10px 20px ${({ theme }) => `${theme.polarNight.nord3}05`}, 10px 10px 20px ${({ theme }) => `${theme.polarNight.nord3}05`};
 `

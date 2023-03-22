@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { avatarPNG } from '../assets'
-
 import { useStore } from '../hooks'
 
 export function Avatar() {
@@ -21,6 +19,6 @@ const Picture = styled.div.attrs({ draggable: false })`
 	background-size: cover;
 	width: 200px;
 	height: 200px;
-	border: 5px solid ${({ theme }) => theme.light.primary};
+	border: 5px solid ${({ theme }) => theme.snowStorm.nord6};
 	border-radius: 50%;
 `

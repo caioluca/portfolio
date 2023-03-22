@@ -36,5 +36,5 @@ const InfoLabel = styled.span`
 	font-weight: 300;
 	font-size: 12px;
 	line-height: 18px;
-	color: ${({ theme }) => theme.dark.tertiary};
+	color: ${({ theme }) => theme.polarNight.nord3};
 `
