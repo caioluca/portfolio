@@ -1,12 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { useStore } from '../hooks'
+
 export function PersonalInfo() {
+	const { user = {} } = useStore()
+
 	return (
 		<Container>
-			<InfoLabel children='Caio Luca' />
-			<InfoLabel children='Software Engineer' />
-			<InfoLabel children='São Paulo, Brazil' />
+			<InfoLabel children={user?.name} />
+			<InfoLabel children={user?.company} />
+			<InfoLabel children={user?.location} />
 		</Container>
 	)
 }

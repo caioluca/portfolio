@@ -21,6 +21,7 @@ const Container = styled.div`
 	background-color: ${({ theme }) => theme.light.quartiary};
 	padding: 12px 19px;
 	cursor: pointer;
+	user-select: none;
 
 	&:hover {
 		background-color: ${({ theme }) => theme.light.primary};

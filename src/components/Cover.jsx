@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import background from '../assets/pics/background.png'
+import { backgroundPNG } from '../assets'
 
 import { Avatar } from './'
 
@@ -15,7 +15,7 @@ export function Cover() {
 
 const Container = styled.div`
 	position: relative;
-	background-image: url(${background});
+	background-image: url(${backgroundPNG});
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

@@ -1,9 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import avatar from '../assets/pics/avatar.png'
+
+import { avatarPNG } from '../assets'
+
+import { useStore } from '../hooks'
 
 export function Avatar() {
-	return <Picture />
+	const { user = {} } = useStore()
+
+	return <Picture url={user?.avatar_url} />
 }
 
 const Picture = styled.div.attrs({ draggable: false })`
@@ -11,7 +16,7 @@ const Picture = styled.div.attrs({ draggable: false })`
 	left: 38px;
 	top: 107px;
 
-	background-image: url(${avatar});
+	background-image: url(${({ url }) => url});
 	background-position: center;
 	background-size: cover;
 	width: 200px;

@@ -14,7 +14,7 @@ export function Header() {
 
 const Container = styled.div`
 	width: 100%;
-	height: 457px;
+	min-height: 457px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
