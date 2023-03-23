@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Header, Socials } from './components'
+import { Header, Socials, ThemeSwitcher } from './components'
 import { useActions } from './hooks/useActions'
 
 
@@ -16,11 +16,13 @@ export default function App() {
 		<Container>
 			<Header />
 			<Socials />
+			<ThemeSwitcher />
 		</Container>
 	)
 }
 
 const Container = styled.div`
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

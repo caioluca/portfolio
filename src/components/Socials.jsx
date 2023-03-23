@@ -3,15 +3,15 @@ import styled from 'styled-components'
 
 import { Card } from './'
 
-import { discordSVG } from '../assets'
+import { DiscordSVG } from '../assets'
 
 const socials = [
-	{ social: 'discord', link: 'discord', Icon: discordSVG },
-	{ social: 'github', link: 'github', Icon: discordSVG },
-	{ social: 'spotify', link: 'spotify', Icon: discordSVG },
-	{ social: 'twitch', link: 'twitch', Icon: discordSVG },
-	{ social: 'twitter', link: 'twitter', Icon: discordSVG },
-	{ social: 'youtube', link: 'youtube', Icon: discordSVG }
+	{ social: 'discord', link: 'discord', Icon: DiscordSVG },
+	{ social: 'github', link: 'github', Icon: DiscordSVG },
+	{ social: 'spotify', link: 'spotify', Icon: DiscordSVG },
+	{ social: 'twitch', link: 'twitch', Icon: DiscordSVG },
+	{ social: 'twitter', link: 'twitter', Icon: DiscordSVG },
+	{ social: 'youtube', link: 'youtube', Icon: DiscordSVG }
 ]
 
 export function Socials() {

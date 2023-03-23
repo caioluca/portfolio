@@ -4,9 +4,9 @@ import styled from 'styled-components'
 import { useStore } from '../hooks'
 
 export function Avatar() {
-	const { user = {} } = useStore()
+	const { user = {}, darkMode } = useStore()
 
-	return <Picture url={user?.avatar_url} />
+	return <Picture url={user?.avatar_url} darkMode={darkMode} />
 }
 
 const Picture = styled.div.attrs({ draggable: false })`
@@ -19,6 +19,6 @@ const Picture = styled.div.attrs({ draggable: false })`
 	background-size: cover;
 	width: 200px;
 	height: 200px;
-	border: 5px solid ${({ theme }) => theme.snowStorm.nord6};
+	border: 5px solid ${({ theme, darkMode }) => !!darkMode ? theme.polarNight.nord1 : theme.snowStorm.nord6};
 	border-radius: 50%;
 `

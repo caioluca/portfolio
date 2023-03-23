@@ -6,12 +6,17 @@ export {
 	backgroundPNG, 
 }
 
-export { ReactComponent as discordSVG } from './icons/discord.svg'
-export { ReactComponent as githubSVG } from './icons/github.svg'
-export { ReactComponent as spotifySVG } from './icons/spotify.svg'
-export { ReactComponent as twitchSVG } from './icons/twitch.svg'
-export { ReactComponent as twitterSVG } from './icons/twitter.svg'
-export { ReactComponent as youtubeSVG } from './icons/youtube.svg'
+export { ReactComponent as DiscordSVG } from './icons/discord.svg'
+export { ReactComponent as GithubSVG } from './icons/github.svg'
+export { ReactComponent as SpotifySVG } from './icons/spotify.svg'
+export { ReactComponent as TwitchSVG } from './icons/twitch.svg'
+export { ReactComponent as TwitterSVG } from './icons/twitter.svg'
+export { ReactComponent as YoutubeSVG } from './icons/youtube.svg'
 
-export { ReactComponent as mailSVG } from './icons/mail-icon.svg'
-export { ReactComponent as phoneSVG } from './icons/phone-icon.svg'
+export { ReactComponent as MailSVG } from './icons/mail-icon.svg'
+export { ReactComponent as PhoneSVG } from './icons/phone-icon.svg'
+export { ReactComponent as DarkMailSVG } from './icons/dark-mail-icon.svg'
+export { ReactComponent as DarkPhoneSVG } from './icons/dark-phone-icon.svg'
+
+export { ReactComponent as MoonSVG } from './icons/moon.svg'
+export { ReactComponent as SunSVG } from './icons/sun.svg'

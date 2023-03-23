@@ -1,11 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { useStore } from '../hooks'
+
 export function Card({ social, link, Icon }) {
+	const { darkMode } = useStore()
+
 	return (
-		<Container>
+		<Container darkMode={darkMode}>
 			<Icon />	
-			<Label children={link} />
+			<Label children={link} darkMode={darkMode} />
 		</Container>
 	)
 }
@@ -18,14 +22,15 @@ const Container = styled.div`
 	gap: 14px;
 	border-radius: 24px;
 	box-shadow: -10px -10px 20px ${({ theme }) => `${theme.polarNight.nord3}05`}, 10px 10px 20px ${({ theme }) => `${theme.polarNight.nord3}05`};
-	background-color: ${({ theme }) => theme.snowStorm.nord5};
+	background-color: ${({ theme, darkMode }) => !!darkMode ? theme.polarNight.nord1 : theme.snowStorm.nord5};
 	padding: 12px 19px;
 	cursor: pointer;
 	user-select: none;
 
 	&:hover {
-		background-color: ${({ theme }) => theme.snowStorm.nord6};
-		transition: 0.3s;
+		background-color: ${({ theme, darkMode }) => !!darkMode ? theme.polarNight.nord3 : theme.snowStorm.nord6};
+		transition: 0.2s;
+		transform: scale(1.1);
 	}
 `
 
@@ -36,5 +41,5 @@ const Label = styled.span`
 
 	text-transform: uppercase;
 
-	color: ${({ theme }) => theme.polarNight.nord1};
+	color: ${({ theme, darkMode }) => !!darkMode ? theme.snowStorm.nord4 : theme.polarNight.nord1};
 `

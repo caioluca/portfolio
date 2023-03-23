@@ -1,19 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { ReactComponent as MailIcon } from '../assets/icons/mail-icon.svg'
-import { ReactComponent as PhoneIcon } from '../assets/icons/phone-icon.svg'
+import { MailSVG, DarkMailSVG, PhoneSVG, DarkPhoneSVG } from '../assets'
+
+import { useStore } from '../hooks'
 
 export function ContactInfo() {
+	const { darkMode } = useStore()
+
 	return (
 		<Container>
 			<InfoContainer>
-				<MailIcon />
-				<InfoLabel children='caioluca.job@gmail.com' />
+				{!!darkMode ? <MailSVG /> : <DarkMailSVG />}
+				<InfoLabel children='caioluca.job@gmail.com' darkMode={darkMode} />
 			</InfoContainer>
 			<InfoContainer>
-				<PhoneIcon />
-				<InfoLabel children='+055 (11) 98338-8646' />
+				{!!darkMode ? <PhoneSVG /> : <DarkPhoneSVG />}
+				<InfoLabel children='+055 (11) 98338-8646' darkMode={darkMode} />
 			</InfoContainer>
 		</Container>
 	)
@@ -36,5 +39,5 @@ const InfoLabel = styled.span`
 	font-weight: 300;
 	font-size: 12px;
 	line-height: 18px;
-	color: ${({ theme }) => theme.polarNight.nord3};
+	color: ${({ theme, darkMode }) => !!darkMode ? theme.snowStorm.nord6 : theme.polarNight.nord3};
 `

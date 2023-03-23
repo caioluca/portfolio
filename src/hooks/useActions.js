@@ -18,7 +18,12 @@ export function useActions() {
 		}
 	}
 
+	function toggleTheme(){
+		dispatch({ type: TYPES.TOGGLE_THEME })
+	}
+
 	return {
-		fetchUserProfile
+		fetchUserProfile, 
+		toggleTheme, 
 	}
 }

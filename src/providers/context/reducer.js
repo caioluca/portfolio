@@ -1,7 +1,8 @@
 import { TYPES } from './types'
 
 export const initialState = {
-	user: {}
+	user: {},
+	darkMode: true
 }
 
 export function reducer(state, action) {
@@ -11,6 +12,10 @@ export function reducer(state, action) {
 		case TYPES.FETCH_USER_PROFILE:
 			
 			return { ...state, user: payload }
+ 
+		case TYPES.TOGGLE_THEME:
+
+			return { ...state, darkMode: !state?.darkMode }
 	
 		default:
 			return state
