@@ -9,7 +9,7 @@ export function PersonalInfo() {
 	return (
 		<Container darkMode={darkMode}>
 			<InfoLabel children={user?.name} darkMode={darkMode} />
-			<InfoLabel children={user?.company} darkMode={darkMode} />
+			<InfoLabel children={user?.bio} darkMode={darkMode} />
 			<InfoLabel children={user?.location} darkMode={darkMode} />
 		</Container>
 	)
@@ -24,6 +24,7 @@ const Container = styled.div`
 		font-size: 22px;
 		line-height: 33px;
 		color: ${({ theme, darkMode }) => !!darkMode ? theme.snowStorm.nord6 : theme.polarNight.nord3};
+		transition: 0.2s;
 	}
 `
 
@@ -32,4 +33,5 @@ const InfoLabel = styled.span`
 	font-size: 16px;
 	line-height: 24px;
 	color: ${({ theme, darkMode }) => darkMode ? theme.frost.nord9 : theme.frost.nord7};
+	transition: 0.2s;
 `

@@ -40,4 +40,5 @@ const InfoLabel = styled.span`
 	font-size: 12px;
 	line-height: 18px;
 	color: ${({ theme, darkMode }) => !!darkMode ? theme.snowStorm.nord6 : theme.polarNight.nord3};
+	transition: 0.2s;
 `

@@ -26,4 +26,5 @@ const Container = styled.div`
 	border-radius: 24px;
 	background-color: ${({ theme, darkMode }) => darkMode ? theme.polarNight.nord1 : theme.snowStorm.nord6 };
 	box-shadow: -10px -10px 20px ${({ theme }) => `${theme.polarNight.nord3}05`}, 10px 10px 20px ${({ theme }) => `${theme.polarNight.nord3}05`};
+	transition: 0.2s;
 `

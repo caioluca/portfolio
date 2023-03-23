@@ -21,4 +21,5 @@ const Picture = styled.div.attrs({ draggable: false })`
 	height: 200px;
 	border: 5px solid ${({ theme, darkMode }) => !!darkMode ? theme.polarNight.nord1 : theme.snowStorm.nord6};
 	border-radius: 50%;
+	transition: 0.2s;
 `

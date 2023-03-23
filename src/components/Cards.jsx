@@ -3,18 +3,42 @@ import styled from 'styled-components'
 
 import { useStore } from '../hooks'
 
-export function Card({ social, link, Icon }) {
-	const { darkMode } = useStore()
+export function Cards() {
+	const { currentTab, socials, repos } = useStore()
 
 	return (
-		<Container darkMode={darkMode}>
-			<Icon />	
-			<Label children={link} darkMode={darkMode} />
+		<Container>
+			{(currentTab === 'Link Tree' ? socials : repos)?.map((social, index) => <Card key={index} {...social} />)}
 		</Container>
 	)
 }
 
+function Card({ name, link, Icon }) {
+	const { darkMode } = useStore()
+
+	function handleNavigate() {
+		window.open(link, '_blank')
+	}
+
+	return (
+		<CardContainer darkMode={darkMode} onClick={handleNavigate}>
+			<Icon />	
+			<Label children={name} darkMode={darkMode} />
+		</CardContainer>
+	)
+}
+
 const Container = styled.div`
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 842px;
+	justify-content: space-between;
+	row-gap: 21px;
+`
+
+const CardContainer = styled.div`
 	width: 100%;
 	max-width: 334px;
 	display: flex;
@@ -26,6 +50,8 @@ const Container = styled.div`
 	padding: 12px 19px;
 	cursor: pointer;
 	user-select: none;
+
+	transition: 0.2s;
 
 	&:hover {
 		background-color: ${({ theme, darkMode }) => !!darkMode ? theme.polarNight.nord3 : theme.snowStorm.nord6};
@@ -42,4 +68,5 @@ const Label = styled.span`
 	text-transform: uppercase;
 
 	color: ${({ theme, darkMode }) => !!darkMode ? theme.snowStorm.nord4 : theme.polarNight.nord1};
+	transition: 0.2s;
 `

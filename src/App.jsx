@@ -1,28 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Header, Socials, ThemeSwitcher } from './components'
+import { Tabs, Header, Cards } from './components'
 import { useActions } from './hooks/useActions'
 
 
 export default function App() {
-	const { fetchUserProfile } = useActions()
+	const { fetchUserProfile, fetchUserRepos } = useActions()
 
 	React.useEffect(() => {
 		fetchUserProfile()
+		fetchUserRepos()
 	}, [])
 
 	return (
 		<Container>
+			<Tabs />
 			<Header />
-			<Socials />
-			<ThemeSwitcher />
+			<Cards />
 		</Container>
 	)
 }
 
 const Container = styled.div`
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

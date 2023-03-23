@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 	body {
 		font-family: 'Poppins', sans-serif;
 		background-color: ${({ theme, darkMode }) => !!darkMode ? theme.snowStorm.nord4 : theme.polarNight.nord0};
-		padding: 14px 28px;
+		padding: 20px 28px;
 	}
 
 	#root {
