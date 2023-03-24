@@ -39,7 +39,7 @@ function Icon({ name, darkMode }) {
 			return !!darkMode ? <TwitterSVG /> : <DarkTwitterSVG />
 	
 		default:
-			return <></>
+			return !!darkMode ? <GithubSVG /> : <DarkGithubSVG />
 	}
 }
 
