@@ -22,4 +22,12 @@ const Picture = styled.div.attrs({ draggable: false })`
 	border: 5px solid ${({ theme, darkMode }) => !!darkMode ? theme.polarNight.nord1 : theme.snowStorm.nord6};
 	border-radius: 50%;
 	transition: 0.2s;
+
+	@media screen and (max-width: 480px) {
+		position: relative;
+		left: 0;
+
+		width: 150px;
+		height: 150px;
+	}
 `

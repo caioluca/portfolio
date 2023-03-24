@@ -19,4 +19,9 @@ const Container = styled.div`
 	
 	margin: 23px 34px;
 	margin-top: 0px;
+
+	@media screen and (max-width: 480px) {
+		flex-direction: column;
+		gap: 20px;
+	}
 `

@@ -8,10 +8,8 @@ export {
 
 export { ReactComponent as DiscordSVG } from './icons/discord.svg'
 export { ReactComponent as GithubSVG } from './icons/github.svg'
-export { ReactComponent as SpotifySVG } from './icons/spotify.svg'
-export { ReactComponent as TwitchSVG } from './icons/twitch.svg'
+export { ReactComponent as LinkedInSVG } from './icons/linkedin.svg'
 export { ReactComponent as TwitterSVG } from './icons/twitter.svg'
-export { ReactComponent as YoutubeSVG } from './icons/youtube.svg'
 
 export { ReactComponent as MailSVG } from './icons/mail-icon.svg'
 export { ReactComponent as PhoneSVG } from './icons/phone-icon.svg'

@@ -1,5 +1,6 @@
 import { TYPES } from './types'
-import { DiscordSVG } from '../../assets'
+
+import { DiscordSVG, GithubSVG, LinkedInSVG, TwitterSVG } from '../../assets'
 
 export const initialState = {
 	user: {}, 
@@ -7,12 +8,10 @@ export const initialState = {
 	currentTab: 'Link Tree', 
 	repos: [], 
 	socials: [
+		{ name: 'github', link: 'https://github.com/caioluca', Icon: GithubSVG }, 
+		{ name: 'linkedin', link: 'https://www.linkedin.com/', Icon: LinkedInSVG }, 
 		{ name: 'discord', link: 'https://discordapp.com/users/592864138863312918', Icon: DiscordSVG }, 
-		{ name: 'github', link: 'https://github.com/caioluca', Icon: DiscordSVG }, 
-		{ name: 'spotify', link: 'https://open.spotify.com/user/wood6zh5x6dvo1uxhgmiulyw9/following', Icon: DiscordSVG }, 
-		{ name: 'twitch', link: 'https://www.twitch.tv/caioluca__', Icon: DiscordSVG }, 
-		{ name: 'twitter', link: 'https://twitter.com/caioluca__', Icon: DiscordSVG }, 
-		{ name: 'youtube', link: 'https://www.youtube.com/@caioluca__', Icon: DiscordSVG }, 
+		{ name: 'twitter', link: 'https://twitter.com/caioluca__', Icon: TwitterSVG }, 
 	]
 }
 

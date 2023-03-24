@@ -47,7 +47,7 @@ const CardContainer = styled.div`
 	border-radius: 24px;
 	box-shadow: -10px -10px 20px ${({ theme }) => `${theme.polarNight.nord3}05`}, 10px 10px 20px ${({ theme }) => `${theme.polarNight.nord3}05`};
 	background-color: ${({ theme, darkMode }) => !!darkMode ? theme.polarNight.nord1 : theme.snowStorm.nord5};
-	padding: 12px 19px;
+	padding: 16px 23px;
 	cursor: pointer;
 	user-select: none;
 
@@ -57,6 +57,14 @@ const CardContainer = styled.div`
 		background-color: ${({ theme, darkMode }) => !!darkMode ? theme.polarNight.nord3 : theme.snowStorm.nord6};
 		transition: 0.2s;
 		transform: scale(1.1);
+	}
+
+	@media screen and (max-width: 768px) {
+		max-width: none;
+
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 `
 
