@@ -3,6 +3,17 @@ import styled from 'styled-components'
 
 import { useStore } from '../hooks'
 
+import {
+	DiscordSVG, 
+	DarkDiscordSVG, 
+	GithubSVG, 
+	DarkGithubSVG, 
+	LinkedInSVG, 
+	DarkLinkedInSVG, 
+	TwitterSVG, 
+	DarkTwitterSVG, 
+} from '../assets'
+
 export function Cards() {
 	const { currentTab, socials, repos } = useStore()
 
@@ -13,7 +24,26 @@ export function Cards() {
 	)
 }
 
-function Card({ name, link, Icon }) {
+function Icon({ name, darkMode }) {
+	switch (name) {
+		case 'github':
+			return !!darkMode ? <GithubSVG /> : <DarkGithubSVG />
+
+		case 'linkedin':
+			return !!darkMode ? <LinkedInSVG /> : <DarkLinkedInSVG />
+
+		case 'discord':
+			return !!darkMode ? <DiscordSVG /> : <DarkDiscordSVG />
+
+		case 'twitter':
+			return !!darkMode ? <TwitterSVG /> : <DarkTwitterSVG />
+	
+		default:
+			return <></>
+	}
+}
+
+function Card({ name, link }) {
 	const { darkMode } = useStore()
 
 	function handleNavigate() {
@@ -22,7 +52,7 @@ function Card({ name, link, Icon }) {
 
 	return (
 		<CardContainer darkMode={darkMode} onClick={handleNavigate}>
-			<Icon />	
+			<Icon name={name} darkMode={darkMode} />
 			<Label children={name} darkMode={darkMode} />
 		</CardContainer>
 	)
@@ -35,7 +65,7 @@ const Container = styled.div`
 	width: 100%;
 	max-width: 842px;
 	justify-content: space-between;
-	row-gap: 21px;
+	row-gap: 28px;
 `
 
 const CardContainer = styled.div`

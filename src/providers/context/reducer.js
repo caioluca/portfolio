@@ -1,17 +1,15 @@
 import { TYPES } from './types'
 
-import { DiscordSVG, GithubSVG, LinkedInSVG, TwitterSVG } from '../../assets'
-
 export const initialState = {
 	user: {}, 
 	darkMode: true, 
 	currentTab: 'Link Tree', 
 	repos: [], 
 	socials: [
-		{ name: 'github', link: 'https://github.com/caioluca', Icon: GithubSVG }, 
-		{ name: 'linkedin', link: 'https://www.linkedin.com/', Icon: LinkedInSVG }, 
-		{ name: 'discord', link: 'https://discordapp.com/users/592864138863312918', Icon: DiscordSVG }, 
-		{ name: 'twitter', link: 'https://twitter.com/caioluca__', Icon: TwitterSVG }, 
+		{ name: 'github', link: 'https://github.com/caioluca' }, 
+		{ name: 'linkedin', link: 'https://www.linkedin.com/' }, 
+		{ name: 'discord', link: 'https://discordapp.com/users/592864138863312918' }, 
+		{ name: 'twitter', link: 'https://twitter.com/caioluca__' }, 
 	]
 }
 
