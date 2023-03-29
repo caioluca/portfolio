@@ -12,6 +12,7 @@ export default function App() {
 	React.useEffect(() => {
 		fetchUserProfile()
 		fetchUserRepos()
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	return (
