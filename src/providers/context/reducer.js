@@ -7,7 +7,7 @@ export const initialState = {
 	repos: [], 
 	socials: [
 		{ name: 'github', link: 'https://github.com/caioluca' }, 
-		{ name: 'linkedin', link: 'https://www.linkedin.com/' }, 
+		// { name: 'linkedin', link: 'https://www.linkedin.com/' }, 
 		{ name: 'discord', link: 'https://discordapp.com/users/592864138863312918' }, 
 		{ name: 'twitter', link: 'https://twitter.com/caioluca__' }, 
 	]
