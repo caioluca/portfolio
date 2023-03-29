@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.2afcfaf8.js",
+    "static/media/background.png": "/portfolio/static/media/background.cbaa96d73dceece65d68.png",
+    "static/media/avatar.png": "/portfolio/static/media/avatar.3877fb03e64b246d2051.png",
+    "static/media/dark-twitter.svg": "/portfolio/static/media/dark-twitter.be8d7de047d14aa9ffbcfbe277c43754.svg",
+    "static/media/twitter.svg": "/portfolio/static/media/twitter.f17e3566bb15e0bcec4526a051d3a963.svg",
+    "static/media/dark-discord.svg": "/portfolio/static/media/dark-discord.c2cbacab84a4b32abe11161657c20001.svg",
+    "static/media/dark-github.svg": "/portfolio/static/media/dark-github.aac54a75fc5c8ad0785a97024fe8da75.svg",
+    "static/media/dark-phone-icon.svg": "/portfolio/static/media/dark-phone-icon.3d56c17a1ad8c6f354746b0ac34ba626.svg",
+    "static/media/discord.svg": "/portfolio/static/media/discord.280be711143550c4b2b3e97fe7ab6b7a.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.d55a15a764d3df41c2d7d4c74e1ffecb.svg",
+    "static/media/phone-icon.svg": "/portfolio/static/media/phone-icon.9befed49377aac45be362f6f52534f7e.svg",
+    "static/media/dark-linkedin.svg": "/portfolio/static/media/dark-linkedin.737fd4c9420d607fc80479f4894d7e78.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.4e7ee55a7df97ac6f1222dde7a5f66f3.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/sun.svg": "/portfolio/static/media/sun.206479411dc2b504d6c61801acad0ccb.svg",
+    "static/media/moon.svg": "/portfolio/static/media/moon.20f59c54831afd92785d185d9f819b23.svg",
+    "static/media/dark-mail-icon.svg": "/portfolio/static/media/dark-mail-icon.d5d61d851186d617c0b957683cdf8b81.svg",
+    "static/media/mail-icon.svg": "/portfolio/static/media/mail-icon.c191d75e290a223bd4ce526b9584ef05.svg",
+    "main.2afcfaf8.js.map": "/portfolio/static/js/main.2afcfaf8.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2afcfaf8.js"
+  ]
+}
