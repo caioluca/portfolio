@@ -3,9 +3,12 @@ import styled from 'styled-components'
 
 import { avatarPNG } from '../assets'
 
-export function Avatar() {
+import { useStore } from '../hooks'
 
-	return <Picture url={avatarPNG} />
+export function Avatar() {
+	const { darkMode } = useStore()
+
+	return <Picture url={avatarPNG} darkMode={darkMode} />
 }
 
 const Picture = styled.div.attrs({ draggable: false })`
