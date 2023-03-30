@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { useStore } from '../hooks'
+import { avatarPNG } from '../assets'
 
 export function Avatar() {
-	const { user = {}, darkMode } = useStore()
 
-	return <Picture url={user?.avatar_url} darkMode={darkMode} />
+	return <Picture url={avatarPNG} />
 }
 
 const Picture = styled.div.attrs({ draggable: false })`
