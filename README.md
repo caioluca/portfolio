@@ -6,9 +6,13 @@ This is my personal portfolio containing my personal projects and my social link
 
 <center>
 
-![Portfolio Preview](https://im.ezgif.com/tmp/ezgif-1-22d86afd2a.gif)
+![Portfolio Preview](src/assets/preview.gif)
 
 </center>
+
+[Figma Layout](https://www.figma.com/file/WYvTtLjYW4I5CbaMSXXLRA/Portfolio?node-id=0-1&t=6no7xOiE9FG0yYrP-0)
+
+[Color Palette](https://www.nordtheme.com/docs/colors-and-palettes)
 
 Techs used:
 - [Reactjs](https://react.dev/)
